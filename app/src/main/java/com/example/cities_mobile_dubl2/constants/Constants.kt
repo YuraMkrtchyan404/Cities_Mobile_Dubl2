@@ -20,6 +20,7 @@ const val SECOND_SCREEN_TITLE = "Cities List"
 
 const val API_KEY = "597055feb96c4121a27134132231311"
 const val BASE_URL = "https://api.weatherapi.com/v1/"
+const val LOCATION_PERMISSION_REQUEST_CODE = 123
 
 // Image resource constants
 val YEREVAN_IMAGE_RES = R.drawable.yerevan

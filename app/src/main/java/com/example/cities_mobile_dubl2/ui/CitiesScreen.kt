@@ -36,17 +36,18 @@ fun CitiesScreen(navController: NavHostController, viewModel: WeatherViewModel =
             onClick = {
                 navController.navigateUp()
             },
-            modifier = Modifier.padding(8.dp)
+            modifier = Modifier
+                .padding(8.dp)
                 .align(Alignment.Start),
 
-        ) {
+            ) {
             Text(text = "Go Back")
         }
 
-        if (weatherList.isNullOrEmpty()) {
-            Text(text = "Loading weather data...")
-        } else {
+
+        if (weatherList != null) {
             WeatherList(weatherList = weatherList)
         }
+
     }
 }
